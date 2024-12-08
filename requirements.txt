@@ -1,0 +1,8 @@
+opencv-python
+requests
+pynput # keylog
+pyautogui # ss
+pyaudio # audio
+wave # audio
+gps # loc
+pyfiglet
