@@ -30,10 +30,10 @@ def view():
                             OOOOOOOOOO
                                OOOO
 
-                                 1
-                     CCCCC      11    33333   77777
-                    C          1 1        3       7
-                    C      --    1    33333      7
+                                 
+                     CCCCC       1    33333   77777
+                    C           11        3       7
+                    C      --  1 1    33333      7
                     C            1        3     7
                      CCCCC     11111  33333    7
 
