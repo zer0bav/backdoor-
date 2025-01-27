@@ -4,6 +4,7 @@ from colorama import Fore
 import backdoor_listen
 import backdoor_create
 import other_function
+import py2exe
 def view():
     while True:
         os.system("clear")
@@ -53,7 +54,8 @@ def view():
             "[0] Backdoor Create \n"
             "[1] Backdoor Injection \n"
             "[2] Backdoor Listen \n"
-            "[3] Exit \n"
+            "[3] Backdoor Convert To Exe\n"
+            "[4] Exit \n"
 
         )
         door_choose = (input(Fore.CYAN + "=> " ))
@@ -75,11 +77,10 @@ def view():
                 os.system("nc -nvlp 4444")
             elif x == "2":
                 backdoor_listen.listen_backdoor()
-
         elif door_choose == "3":
+            py2exe.py_exe()
+        elif door_choose == "4":
             exit()
             break
-
         else:
-            
             continue
