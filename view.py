@@ -43,7 +43,7 @@ def view():
 
               )
 
-        print(Fore.RED + "Author: it's ." )
+        print(Fore.RED + "Author: it's zer0bav" )
 
 
 
